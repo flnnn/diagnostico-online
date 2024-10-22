@@ -1,3 +1,5 @@
+# ! Projeto ainda em construção !
+
 # Diagnóstico Online
 
 Este é um projeto de diagnóstico assistido por IA. O projeto foi desenvolvido para ajudar as pessoas a entenderem melhor os sintomas que estão experienciando. As pessoas devem informar os sintomas que estão sentindo, então uma Inteligência Artificial (ChatGPT) irá analisar as informações fornecidas e sugerir possíveis doenças ou enfermidades associadas. Também é possível localizar farmácias próximas do usuário para que o mesmo possa adquirir um medicamento para o tratamento de sua enfermidade.
