@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <header class="helper">
+    <header>
         <h1>Diagnóstico Online</h1>
     </header>
-    <main class="helper">
+    <main>
         <section class="sintomas">
             <form action="/llm" method="POST">
                 <div>
@@ -51,7 +51,7 @@
             {% endif %}
         </section>
     </main>
-    <footer class="helper">
+    <footer>
         <p>&copy; Projeto Integrador IV - 6HC1</p>
     </footer>
     <script src="{{ url_for('static', filename='index.js') }}"></script>
