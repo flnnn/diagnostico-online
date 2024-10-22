@@ -27,6 +27,8 @@ As seguintes etapas são necessárias para o estado atual do projeto, posteriorm
 
 4. Executar o comando "pip install -r requirements.txt".
 
-5. Então faça: "python main.py" e acesse o endereço "http://127.0.0.1:5000".
+5. Criar arquivo .env dentro da pasta "medicogpt" e colocar a chave da API do ChatGPT.
+
+6. Então faça: "python main.py" e acesse o endereço "http://127.0.0.1:5000".
 
 *"Uma longa viagem começa por um passo." - Provérbio Chinês*
