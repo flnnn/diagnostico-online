@@ -1,0 +1,28 @@
+.helper {
+    border: 1px solid rgba(0, 0, 0, 0.267);
+}
+
+header {
+    width: 90vw;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+main {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+footer {
+    width: 90vw;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
