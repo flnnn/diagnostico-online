@@ -1,5 +1,7 @@
-.helper {
-    border: 1px solid rgba(0, 0, 0, 0.267);
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+body {
+    font-family: "Oxanium", sans-serif;
 }
 
 header {
