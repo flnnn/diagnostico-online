@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico Online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="helper">
+        <h1>Diagnóstico Online</h1>
+    </header>
+    <main class="helper">
+        <section class="sintomas">
+            <form action="/llm" method="POST">
+                <div>
+                    <label for="sintoma1">Sintoma 1:</label>
+                    <select id="sintoma1" name="sintoma1">
+                        <option value="">Selecione</option>
+                        <option value="tosse">Tosse</option>
+                        <option value="febre">Febre</option>
+                        <option value="dorDeCabeca">Dor de Cabeça</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sintoma2">Sintoma 2:</label>
+                    <select id="sintoma2" name="sintoma2">
+                        <option value="">Selecione</option>
+                        <option value="cansaco">Cansaço</option>
+                        <option value="dorMuscular">Dor Muscular</option>
+                        <option value="calafrios">Calafrios</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sintoma3">Sintoma 3:</label>
+                    <select id="sintoma3" name="sintoma3">
+                        <option value="">Selecione</option>
+                        <option value="sudorese">Sudorese</option>
+                        <option value="nausea">Náusea</option>
+                        <option value="dorGarganta">Dor de Garganta</option>
+                    </select>
+                </div>
+                <button id="gerarDiagnostico">Diagnosticar</button>
+            </form>
+        </section>
+        <section class="diagnostico">
+            {% if diagnostico %}
+                <p>{{ diagnostico }}</p>
+            {% else %}
+                <p>Esperando pela entrada dos sintomas...</p>
+            {% endif %}
+        </section>
+    </main>
+    <footer class="helper">
+        <p>&copy; Projeto Integrador IV - 6HC1</p>
+    </footer>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
