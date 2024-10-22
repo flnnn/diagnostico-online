@@ -12,3 +12,19 @@ O objetivo do projeto é fornecer um recurso acessível e de fácil uso, promove
 
 Este é um trabalho em conjunto para a disciplina de Projeto Integrador IV.
 Responsáveis: Felipe Leoncio Nunes, Gabriel dos Santos, Guilherme Barbosa, Guilherme Guimarães e João Victor Leoni.
+
+
+# Rodando a Aplicação
+As seguintes etapas são necessárias para o estado atual do projeto, posteriormente devemos usar o Docker.
+
+1. Clonar o repositório com o comando "git clone https://github.com/flnnn/diagnostico-online.git"
+
+2. Acessar a pasta clonada "diagnostico-online".
+
+3. Criar um ambiente virtual com venv e ativá-lo. [Tutorial](https://dev.to/franciscojdsjr/guia-completo-para-usar-o-virtual-environment-venv-no-python-57bo).
+
+4. Executar o comando "pip install -r requirements.txt".
+
+5. Então faça: "python main.py" e acesse o endereço "http://127.0.0.1:5000".
+
+*"Uma longa viagem começa por um passo." - Provérbio Chinês*
