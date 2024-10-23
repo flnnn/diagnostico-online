@@ -15,11 +15,11 @@ O objetivo do projeto é fornecer um recurso acessível e de fácil uso, promove
 Este é um trabalho em conjunto para a disciplina de Projeto Integrador IV.
 
 Responsáveis:
--> Felipe Leoncio Nunes
--> Gabriel dos Santos
--> Guilherme Barbosa
--> Guilherme Guimarães
--> João Victor Leoni
+- Felipe Leoncio Nunes
+- Gabriel dos Santos
+- Guilherme Barbosa
+- Guilherme Guimarães
+- João Victor Leoni
 
 
 # Rodando a Aplicação 🆙
