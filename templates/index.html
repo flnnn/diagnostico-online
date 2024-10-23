@@ -44,15 +44,16 @@
             </form>
         </section>
         <section class="diagnostico">
-            {% if diagnostico %}
-                <p>{{ diagnostico }}</p>
+            {% if diagnostico and remedio%}
+                <p>Doença diagnosticada: {{ diagnostico }}</p>
+                <p>Remédio recomendado: {{ remedio }}</p>
             {% else %}
                 <p>Esperando pela entrada dos sintomas...</p>
             {% endif %}
         </section>
     </main>
     <footer>
-        <p>&copy; Projeto Integrador IV - 6HC1</p>
+        <p>&copy; 6HC1 Industries</p>
     </footer>
     <script src="{{ url_for('static', filename='index.js') }}"></script>
 </body>
