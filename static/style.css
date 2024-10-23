@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 
+.helper {
+    border: 1px solid rgba(0, 0, 0, 0.267);
+}
+
 body {
     font-family: "Oxanium", sans-serif;
 }
@@ -9,15 +13,68 @@ header {
     text-align: center;
     padding-top: 40px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+header h1 {
+    font-size: 42px;
 }
 
 main {
     display: flex;
-    width: 90vw;
+    width: 50vw;
     margin: 0 auto;
     margin-top: 40px;
     padding: 20px 0;
+    justify-content: center;
+}
+
+section form {
+    text-align: center;
+}
+
+.sintomas {
+    margin-right: 20px;
+}
+
+.sintoma {
+    margin-bottom: 10px;
+}
+
+.sintomas select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.sintomas button {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 13px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#gerarDiagnostico {
+    margin-top: 10px;
+}
+
+.sintomas button:hover {
+    background-color: #303030;
+}
+
+.diagnostico p {
+    margin: 0;
 }
 
 footer {
