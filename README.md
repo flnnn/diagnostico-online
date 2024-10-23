@@ -29,7 +29,7 @@ As seguintes etapas são necessárias para o estado atual do projeto, posteriorm
 
 2. Acessar: "diagnostico-online-main"
 
-3. Criar ambiente virtual: [Tutorial](https://dev.to/franciscojdsjr/guia-completo-para-usar-o-virtual-environment-venv-no-python-57bo).
+3. Criar e ativar o ambiente virtual: [Tutorial](https://dev.to/franciscojdsjr/guia-completo-para-usar-o-virtual-environment-venv-no-python-57bo).
 
 4. Executar o comando: "pip install -r requirements.txt"
 
