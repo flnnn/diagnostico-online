@@ -35,7 +35,7 @@ As seguintes etapas são necessárias para o estado atual do projeto, posteriorm
 
 5. Criar arquivo: .env
 
-6. Conteúdo do .env deve ser: "OPENAI_API_KEY=<chave obtida pelo site da openai>"
+6. Conteúdo do .env deve ser: "OPENAI_API_KEY=...", onde se encontra "..." coloque a chave obtida pelo site da OpenAI.
 
 7. Execute assim: "python main.py"
 
