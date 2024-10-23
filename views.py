@@ -17,6 +17,7 @@ def llm():
         sintoma3 = request.form["sintoma3"]
 
         medico = MedicoGPT()
-        resultado_diagnostico = medico.diagnosticar([sintoma1, sintoma2, sintoma3])
+        resultado_diagnostico = medico.diagnosticar_doenca_stream([sintoma1, sintoma2, sintoma3])
+        resultado_remedio = medico.buscar_remedio_comum(resultado_diagnostico)
 
-        return render_template("index.html", diagnostico=resultado_diagnostico)
+        return render_template("index.html", diagnostico=resultado_diagnostico, remedio=resultado_remedio)
