@@ -13,7 +13,7 @@ header {
     text-align: center;
     padding-top: 40px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 80px;
 }
 
@@ -34,10 +34,21 @@ section form {
     text-align: center;
 }
 
+#busca {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#busca div {
+    margin-top: 30px;
+}
+
 #map {
     margin: 0 auto;
-    margin-top: 50px;
-    height: 400px;
+    margin-top: 30px;
+    height: 300px;
     width: 800px;
 }
 
@@ -49,7 +60,7 @@ section form {
     margin-bottom: 10px;
 }
 
-.sintomas select {
+.sintomas select, #cep {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -61,7 +72,11 @@ section form {
     background-color: white;
 }
 
-.sintomas button {
+#cep {
+    width: 100px;
+}
+
+.sintomas button, #button-cep {
     padding: 10px;
     border: 1px solid #000000;
     border-radius: 5px;
