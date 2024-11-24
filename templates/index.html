@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
-<body>
+<body id="body">
     <header>
         <h1>Diagnóstico Online 🤖</h1>
     </header>
@@ -54,7 +54,18 @@
             {% endif %}
         </section>
     </main>
-    <div id="map"></div>
+    {% if diagnostico and remedio %}
+        <div id="busca">
+            <p>Insira teu CEP para achar farmácias próximas com o medicamento:</p>
+            <input type="text" name="cep" id="cep" required>
+            <input type="button" value="Buscar" id="button-cep" onclick="buscarFarmacias()">
+            <div>
+                <input type="range" name="raio" id="raio" min="100" max="2000" step="10" value="1000">
+                <span id="raio-info" style="display: inline;">Raio: 1000 metros.</span>
+            </div>
+        </div>
+        <div id="map" style="opacity: 0;"></div>
+    {% endif %}
     <footer>
         <p>&copy; 6HC1 Industries</p>
     </footer>
