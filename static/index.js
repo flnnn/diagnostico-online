@@ -1,18 +1,20 @@
-// TESTE
-let botaoDiagnosticar = document.querySelector("#gerarDiagnostico");
-
-function mostrarAlerta() {
-    const sintoma1 = document.getElementById('sintoma1').value;
-    const sintoma2 = document.getElementById('sintoma2').value;
-    const sintoma3 = document.getElementById('sintoma3').value;
-
-    const sintomasSelecionados = [sintoma1, sintoma2, sintoma3].filter(sintoma => sintoma);
-
-    if (sintomasSelecionados.length > 0) {
-        alert('Sintomas selecionados: ' + sintomasSelecionados.join(', '));
+function formatarEntradaCep(event) {
+    let cep = event.target.value.replace(/\D/g, '');
+    if (cep.length <= 5) {
+        cep = cep.replace(/(\d{2})(\d{0,3})/, '$1.$2');
     } else {
-        alert('Nenhum sintoma selecionado.');
+        cep = cep.replace(/(\d{2})(\d{3})(\d{0,3})/, '$1.$2-$3');
     }
+    event.target.value = cep;
 }
 
-// botaoDiagnosticar.addEventListener("click", mostrarAlerta);
+let entradaCep = document.getElementById("cep");
+let seletorRaio = document.getElementById("raio");
+let infoRaio = document.getElementById("raio-info");
+
+entradaCep.addEventListener("input", formatarEntradaCep);
+
+seletorRaio.addEventListener("change", () => {
+    metros = seletorRaio.value;
+    infoRaio.textContent = `Raio: ${metros} metros.`;
+});
