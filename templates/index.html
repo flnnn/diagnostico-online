@@ -17,38 +17,24 @@
             <form action="/llm" method="POST">
                 <div class="sintoma">
                     <label for="sintoma1">Sintoma 1:</label>
-                    <select id="sintoma1" name="sintoma1">
-                        <option value="">Selecione</option>
-                        <option value="tosse">Tosse</option>
-                        <option value="febre">Febre</option>
-                        <option value="dorDeCabeca">Dor de Cabeça</option>
-                    </select>
+                    <input type="text" name="sintoma1" id="sintoma1">
                 </div>
                 <div class="sintoma">
                     <label for="sintoma2">Sintoma 2:</label>
-                    <select id="sintoma2" name="sintoma2">
-                        <option value="">Selecione</option>
-                        <option value="cansaco">Cansaço</option>
-                        <option value="dorMuscular">Dor Muscular</option>
-                        <option value="calafrios">Calafrios</option>
-                    </select>
+                    <input type="text" name="sintoma2" id="sintoma2">
                 </div>
                 <div class="sintoma">
                     <label for="sintoma3">Sintoma 3:</label>
-                    <select id="sintoma3" name="sintoma3">
-                        <option value="">Selecione</option>
-                        <option value="sudorese">Sudorese</option>
-                        <option value="nausea">Náusea</option>
-                        <option value="dorGarganta">Dor de Garganta</option>
-                    </select>
+                    <input type="text" name="sintoma3" id="sintoma3">
                 </div>
                 <button id="gerarDiagnostico">Gerar Diagnóstico</button>
             </form>
         </section>
         <section class="diagnostico">
             {% if diagnostico and remedio%}
-                <p>Doença diagnosticada: {{ diagnostico }}</p>
-                <p>Remédio recomendado: {{ remedio }}</p>
+                <p>Sintomas apresentados: <b>{{ sintomas }}.</b></p>
+                <p>Doença diagnosticada: <b>{{ diagnostico }}</b></p>
+                <p>Remédio recomendado: <b>{{ remedio }}</b></p>
             {% else %}
                 <p>Esperando pela entrada dos sintomas...</p>
             {% endif %}
