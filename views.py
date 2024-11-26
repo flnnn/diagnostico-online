@@ -22,8 +22,9 @@ def llm():
         medico = MedicoGPT()
         resultado_diagnostico = medico.diagnosticar_doenca_stream([sintoma1, sintoma2, sintoma3])
         resultado_remedio = medico.buscar_remedio_comum(resultado_diagnostico)
+        sintomas = ', '.join([sintoma1, sintoma2, sintoma3]).title()
 
-        return render_template("index.html", diagnostico=resultado_diagnostico, remedio=resultado_remedio)
+        return render_template("index.html", diagnostico=resultado_diagnostico, remedio=resultado_remedio, sintomas=sintomas)
     
 
 @app.route("/buscar", methods=["POST"])
