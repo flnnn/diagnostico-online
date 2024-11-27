@@ -1,4 +1,4 @@
-from main import app
+from app import app
 from flask import render_template, request, jsonify, redirect
 
 from medicogpt.medico import MedicoGPT
