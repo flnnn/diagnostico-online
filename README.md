@@ -31,8 +31,8 @@ Responsáveis:
 
 5 - Então execute: `docker --env-file .env -d -p 5000:5000 diagnostico-online`
 
-[!] É importante ressaltar que esse comando está sendo executado com o usuário no grupo "docker" no linux, logo não se faz necessário o uso de "sudo".
-[!] Caso não seja o seu caso, use "sudo" antes do comando mostrado.
+#### [!] É importante ressaltar que esse comando está sendo executado com o usuário no grupo "docker" no linux, logo não se faz necessário o uso de "sudo".
+#### [!] Caso não seja o seu caso, use "sudo" antes do comando mostrado.
 ---
 
 *"Uma longa viagem começa por um passo."* - Provérbio Chinês
