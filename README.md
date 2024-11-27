@@ -1,5 +1,3 @@
-# ⚠️ EM CONSTRUÇÃO ⚠️
-
 # Diagnóstico Online 🤖
 
 Este é um projeto de diagnóstico assistido por IA. O projeto foi desenvolvido para ajudar o usuário a entender melhor os sintomas que está experienciando. O funcionamento será mediante o usuário informando os sintomas que está sentindo, então uma Inteligência Artificial (ChatGPT) irá analisar as informações fornecidas e sugerir possíveis doenças associadas e fará também a recomendação de remédio para o tratamento. Além disso, também será possível localizar farmácias próximas para a compra do remédio recomendado.
@@ -23,24 +21,18 @@ Responsáveis:
 
 
 # Rodando a Aplicação 🆙
-As seguintes etapas são necessárias para o estado atual do projeto, posteriormente devemos usar o Docker.
+1 - Tenha o docker disponível em sua máquina.
 
-1. Clonar o repositório: "git clone https://github.com/flnnn/diagnostico-online.git"
+2 - Clone este repositório e acesse-o.
 
-2. Acessar: "diagnostico-online-main"
+3 - Execute o comando: `docker build --tag diagnostico-online .`
 
-3. Criar e ativar o ambiente virtual: [Tutorial](https://dev.to/franciscojdsjr/guia-completo-para-usar-o-virtual-environment-venv-no-python-57bo).
+4 - Antes de executar a aplicação configure o arquivo .env disponível com as chaves APIs necessárias.
 
-4. Executar o comando: "pip install -r requirements.txt"
+5 - Então execute: `docker --env-file .env -d -p 5000:5000 diagnostico-online`
 
-5. Criar arquivo: .env
-
-6. Conteúdo do .env deve ser: "OPENAI_API_KEY=...", onde se encontra "..." coloque a chave obtida pelo site da OpenAI.
-
-7. Execute assim: "python main.py"
-
-8. Acesse o endereço "http://127.0.0.1:5000"
-
+[!] É importante ressaltar que esse comando está sendo executado com o usuário no grupo "docker" no linux, logo não se faz necessário o uso de "sudo".
+[!] Caso não seja o seu caso, use "sudo" antes do comando mostrado.
 ---
 
 *"Uma longa viagem começa por um passo."* - Provérbio Chinês
