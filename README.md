@@ -35,4 +35,9 @@ Responsáveis:
 #### [!] Caso não seja o seu caso, use "sudo" antes do comando mostrado.
 ---
 
+### Observações a respeito das chaves APIs:
+- TOKEN_API: É necessário criar uma conta em https://www.cepaberto.com/, a API é gratuita.
+- PLACES_API: Uma conta no Google é necessária. Documentação para o recurso usado: https://developers.google.com/maps/documentation/places/web-service/migrate-nearby.
+- OPENAI_API_KEY: Conta na OpenAI necessária, a API não é gratuita.
+
 *"Uma longa viagem começa por um passo."* - Provérbio Chinês
